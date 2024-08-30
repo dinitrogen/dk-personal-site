@@ -3,11 +3,11 @@ import './Navbar.css';
 function Navbar({aboutRef, projectsRef, skillsRef, contactRef}) {
     return (
         <>
-            <nav className="flex m-12">
-                <div className="hover:scale-110 transition-transform">
-                    <img className="block mx-auto h-24 rounded-full" src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1721162075/synth.jpg"></img>
+            <nav className="md:flex m-12">
+                <div className="flex justify-center md:justify-start">
+                    <img className="w-36 rounded-full" src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1725055871/da4milsmr0c6ehomo2fd.jpg"></img>
                 </div>
-                <div className="flex flex-col my-4 mx-4">
+                <div className="flex flex-col my-4 mx-4 items-center md:items-start">
                     <h1 className="text-4xl">Don Knobloch</h1>
                     <ul className="flex gap-8 mx-4 mt-4">
                         <li className="hover:scale-110">

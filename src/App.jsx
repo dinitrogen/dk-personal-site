@@ -19,15 +19,14 @@ function App() {
       
         <Navbar aboutRef={aboutRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef} />
         <div className='h-96 bg-cyan-600'></div>
-        <div className='h-96 bg-cyan-600'></div>
         <About aboutRef={aboutRef} title="About me" bodyText={sharedText.aboutMe.body} />
         <Projects projectsRef={projectsRef} title="Projects" projects={sharedText.projects} />
 
         <Skills skillsRef={skillsRef} title="Skills"/>
         <About aboutRef={contactRef} title="Contact"/>
-        
-        
-
+        <div className='h-96 bg-cyan-600'>
+            
+        </div>
       
     </div>
   )

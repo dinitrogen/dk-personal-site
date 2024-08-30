@@ -4,7 +4,7 @@ import HtmlIcon from "./devicons/HtmlIcon";
 import CssIcon from "./devicons/CssIcon";
 import JsIcon from "./devicons/JsIcon";
 
-function Video({src}) {
+function Video({src, codeUrl, demoUrl}) {
     const [isButtonVisible, setIsButtonVisible] = useState(false);
     
     function showButtons() {
@@ -30,14 +30,18 @@ function Video({src}) {
             />
             
             <div className="absolute bottom-1/2 w-full">
-                <div className="flex justify-center gap-24">
-                    <button className={`btn btn-primary ${isButtonVisible ? 'visible' : 'hidden'}`}>Live Demo</button>
-                    <button className={`btn btn-primary ${isButtonVisible ? 'visible' : 'hidden'}`}>View Code</button>
+                <div className="flex justify-center gap-12 md:gap-24">
+                    <button className={`btn btn-primary ${isButtonVisible ? 'visible' : 'hidden'}`}>
+                        <a href={demoUrl} target="_blank">Live Demo</a>
+                    </button>
+                    <button className={`btn btn-primary ${isButtonVisible ? 'visible' : 'hidden'}`}>
+                        <a href={codeUrl} target="_blank">View Code</a>
+                    </button>
                 </div>
             </div>
             
             <div className={`absolute bottom-1/4 w-full ${isButtonVisible ? 'visible' : 'hidden'}`}>
-                <div className="flex justify-center gap-12">
+                <div className="flex justify-center gap-6 md:gap-12">
                     <div className="tooltip hover:scale-110 transition-transform" data-tip="HTML">   
                         <HtmlIcon />
                     </div>

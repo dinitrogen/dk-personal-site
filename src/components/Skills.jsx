@@ -27,50 +27,50 @@ function Skills({skillsRef, title}) {
             </div>
 
             <MotionDiv delay={0.5}>
-                <div className="flex justify-center gap-4">
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-8" data-tip="HTML">   
+                <div className="flex justify-center flex-wrap gap-8 my-12">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="HTML">   
                         <HtmlIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-7" data-tip="CSS">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="CSS">
                         <CssIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-6" data-tip="JavaScript">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="JavaScript">
                         <JsIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-5" data-tip="React">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="React">
                         <ReactIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-4" data-tip="Angular">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Angular">
                         <AngularIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-3" data-tip="NodeJS">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="NodeJS">
                         <NodeIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-2" data-tip="Express">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Express">
                         <ExpressIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-1" data-tip="Git">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Git">
                         <GitIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-2" data-tip="GitHub">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="GitHub">
                         <GithubIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-3" data-tip="Jenkins">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Jenkins">
                         <JenkinsIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-4" data-tip="Jest">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Jest">
                         <JestIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-5" data-tip="TypeScript">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="TypeScript">
                         <TypescriptIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-6" data-tip="MongoDB">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="MongoDB">
                         <MongoIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-7" data-tip="SQL">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="SQL">
                         <SqlIcon />
                     </div>
-                    <div className="tooltip hover:scale-110 transition-transform translate-y-8" data-tip="Webpack">
+                    <div className="tooltip hover:scale-110 transition-transform" data-tip="Webpack">
                         <WebpackIcon />
                     </div>             
                 </div>
