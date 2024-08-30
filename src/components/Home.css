@@ -1,0 +1,127 @@
+.left-item-out {
+    animation: 0.3s left-slide-out ease-out;
+}
+
+.left-item-in {
+    animation: 0.3s left-slide-in ease-out;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+.right-item-out {
+    animation: 0.3s right-slide-out ease-out;
+}
+
+.right-item-in {
+    animation: 0.3s right-slide-in ease-out;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+.top-item-out {
+    animation: 0.3s top-slide-out ease-out;
+}
+
+.top-item-in {
+    animation: 0.3s top-slide-in ease-out;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+.bottom-item-out {
+    animation: 0.3s bottom-slide-out ease-out;
+}
+
+.bottom-item-in {
+    animation: 0.3s bottom-slide-in ease-out;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+
+@keyframes left-slide-out {
+    from {
+        transform: translateX(100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes left-slide-in {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes right-slide-out {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes right-slide-in {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes top-slide-out {
+    from {
+        transform: translateY(100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes top-slide-in {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes bottom-slide-out {
+    from {
+        transform: translateY(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes bottom-slide-in {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}

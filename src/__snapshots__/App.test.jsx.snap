@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App component > renders correct heading 1`] = `
+<div>
+  <h1>
+    Hello World
+  </h1>
+  <button
+    type="button"
+  >
+    Click
+  </button>
+</div>
+`;
+
+exports[`App component > renders goodbye world after click 1`] = `
+<div>
+  <h1>
+    Goodbye World
+  </h1>
+  <button
+    type="button"
+  >
+    Click
+  </button>
+</div>
+`;
