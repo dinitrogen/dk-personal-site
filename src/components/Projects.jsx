@@ -5,7 +5,7 @@ function Projects({projectsRef, title, projects}) {
     
     return (
         <section>
-            <div ref={projectsRef} className="mx-12">
+            <div ref={projectsRef} className="mx-12 pt-24">
                 <MotionDiv delay={0.3}>
                     <h2 className='text-2xl font-medium'>{title}</h2>
                 </MotionDiv>

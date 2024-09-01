@@ -20,7 +20,7 @@ function Skills({skillsRef, title}) {
     return (
         
         <section>
-            <div ref={skillsRef} className="mx-12">
+            <div ref={skillsRef} className="mx-12 pt-24">
                 <MotionDiv delay={0.3}>
                     <h2 className='text-2xl font-medium'>{title}</h2>
                 </MotionDiv>

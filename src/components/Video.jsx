@@ -1,5 +1,4 @@
 import { useState } from "react";
-import './Video.css'
 import HtmlIcon from "./devicons/HtmlIcon";
 import CssIcon from "./devicons/CssIcon";
 import JsIcon from "./devicons/JsIcon";
