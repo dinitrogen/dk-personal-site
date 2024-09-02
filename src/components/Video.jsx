@@ -7,19 +7,19 @@ function Video({src, codeUrl, demoUrl}) {
     const [isButtonVisible, setIsButtonVisible] = useState(false);
     
     function showButtons() {
+        console.log("enter")
         setIsButtonVisible(true);
     }
 
     function hideButtons() {
+        console.log("exit")
         setIsButtonVisible(false);
     }
 
     
 
     return (
-
         <div onMouseEnter={showButtons} onMouseLeave={hideButtons} className="relative rounded-lg overflow-hidden drop-shadow-xl hover:drop-shadow-2xl max-w-xl">
-            
             <video
                 className={`w-100 h-auto ${isButtonVisible ? 'blur-sm' : ''}`}
                 src={src}

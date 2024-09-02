@@ -1,9 +1,9 @@
 import './Navbar.css';
 
-function Navbar({aboutRef, projectsRef, skillsRef, contactRef}) {
+function Navbar({topNavRef, aboutRef, projectsRef, skillsRef, contactRef}) {
     return (
         <>
-            <nav className="md:flex m-12">
+            <nav ref={topNavRef} className="md:flex m-12">
                 <div className="flex justify-center md:justify-start">
                     <img className="w-36 rounded-full" src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1725055871/da4milsmr0c6ehomo2fd.jpg"></img>
                 </div>

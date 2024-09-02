@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
 
+  const topNavRef = useRef();
   const aboutRef= useRef();
   const projectsRef = useRef();
   const skillsRef = useRef();
@@ -46,30 +47,27 @@ function App() {
   return (
     <div>
         
-        <Navbar  aboutRef={aboutRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef} />
+        <Navbar topNavRef={topNavRef} aboutRef={aboutRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef} />
         <div ref={containerRef}></div>
-        <AnimatePresence>
+        <div className='h-24 bg-primary'></div>
+        <About aboutRef={aboutRef} title="About me" bodyText={sharedText.aboutMe.body} />
+        <Projects projectsRef={projectsRef} title="Projects" projects={sharedText.projects} />
+        <Skills skillsRef={skillsRef} title="Skills"/>
+        <About aboutRef={contactRef} title="Contact"/>
+        <div className='h-96 bg-primary'>
+
+        </div>
+      <AnimatePresence>
            {!isVisible &&
             <motion.div
               initial={{opacity: 0}}
               animate={{opacity: 1}}
               exit={{opacity: 0}}
               transition = {{duration: 0.2}}>
-              <SmallNav aboutRef={aboutRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef}/>
+              <SmallNav topNavRef={topNavRef} aboutRef={aboutRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef}/>
             </motion.div>
           }
         </AnimatePresence>
-
-        <div  className='h-96 bg-orange-400'></div>
-        <div className='h-96 bg-cyan-600'>{isVisible ? "IN VIEWPORT": "NOT IN VIEWPORT"}</div>
-        <About aboutRef={aboutRef} title="About me" bodyText={sharedText.aboutMe.body} />
-        <Projects projectsRef={projectsRef} title="Projects" projects={sharedText.projects} />
-        <Skills skillsRef={skillsRef} title="Skills"/>
-        <About aboutRef={contactRef} title="Contact"/>
-        <div className='h-96 bg-cyan-600'>
-
-        </div>
-      
     </div>
   )
 }
