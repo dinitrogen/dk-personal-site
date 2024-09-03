@@ -3,12 +3,12 @@ export const sharedText = {
     body: [
       {
         id: 1,
-        text: "I am a full-stack web developer based in northeast Ohio, USA. I have over 2 years of professional experience working as a web developer for Fidelity Investments. I love designing and building amazing, responsive, and accessible experiences.",
+        text: "I am a self-taught full stack web developer with more than 2 years of professional experience working as a web application developer for Fidelity Investments. I strive to build experiences that are attractive, responsive, accessible, and fun.",
         delay: 0.5,
       },
       {
         id: 2,
-        text: "",
+        text: "I'm based in northeast Ohio, USA, and when I'm not coding, I'm either spending time with my family or occupied with one of my hobbies, music production or woodworking.",
         delay: 0.7,
       },
     ],
