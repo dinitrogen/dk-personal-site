@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import SmallNav from "./components/SmallNav";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Contact from "./components/Contact";
 
 function App() {
   const topNavRef = useRef();
@@ -53,7 +54,7 @@ function App() {
         contactRef={contactRef}
       />
       <div ref={containerRef}></div>
-      <div className="h-24 bg-primary"></div>
+      <div className="h-12 bg-primary"></div>
       <About
         aboutRef={aboutRef}
         title="About me"
@@ -65,7 +66,7 @@ function App() {
         projects={sharedText.projects}
       />
       <Skills skillsRef={skillsRef} title="Skills" />
-      <About aboutRef={contactRef} title="Contact" />
+      <Contact contactRef={contactRef} title="Contact" />
       <div className="h-96 bg-primary"></div>
       <AnimatePresence>
         {!isVisible && (

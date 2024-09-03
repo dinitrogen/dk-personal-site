@@ -7,12 +7,10 @@ function Video({ src, codeUrl, demoUrl }) {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
   function showButtons() {
-    console.log("enter");
     setIsButtonVisible(true);
   }
 
   function hideButtons() {
-    console.log("exit");
     setIsButtonVisible(false);
   }
 

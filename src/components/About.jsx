@@ -2,8 +2,8 @@ import MotionDiv from "./MotionDiv";
 
 function About({ aboutRef, title, bodyText }) {
   return (
-    <section>
-      <div ref={aboutRef} className="mx-12 pt-24">
+    <section className="md:container mx-auto">
+      <div ref={aboutRef} className="mx-24 pt-24">
         <MotionDiv delay={0.3}>
           <h2 className="text-2xl font-medium">{title}</h2>
         </MotionDiv>
@@ -16,8 +16,6 @@ function About({ aboutRef, title, bodyText }) {
             </MotionDiv>
           ))}
       </div>
-
-      <div className="h-96"></div>
     </section>
   );
 }

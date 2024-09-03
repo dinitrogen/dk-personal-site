@@ -3,7 +3,7 @@ export const sharedText = {
     body: [
       {
         id: 1,
-        text: "I am a self-taught full stack web developer with more than 2 years of professional experience working as a web application developer for Fidelity Investments. I strive to build experiences that are attractive, responsive, accessible, and fun.",
+        text: "Hello and welcome to my personal site! I am a self-taught full stack web developer with more than 2 years of professional experience working as a web application developer for Fidelity Investments. I strive to build experiences that are attractive, responsive, accessible, and fun.",
         delay: 0.5,
       },
       {

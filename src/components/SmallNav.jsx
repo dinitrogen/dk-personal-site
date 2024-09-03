@@ -7,7 +7,7 @@ import { FaChevronUp } from "react-icons/fa";
 
 function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
   return (
-    <nav className="fixed bottom-0 w-full md:right-5 md:top-1/3 md:w-auto">
+    <nav className="fixed bottom-0 w-full md:right-3 md:top-0 md:w-auto">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,9 +28,9 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                   className="tooltip tooltip-top md:tooltip-bottom"
                   data-tip="Go to top"
                 >
-                  <FaChevronUp size={"2rem"} />
+                  <FaChevronUp size={"2rem"} className={"text-primary"} />
                 </span>
-                <span className="font-bold">Top</span>
+                <span className="font-bold text-primary">Top</span>
               </button>
             </li>
 
@@ -47,9 +47,9 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                   className="tooltip tooltip-top md:tooltip-bottom"
                   data-tip="About"
                 >
-                  <IoIosContact size={"2rem"} />
+                  <IoIosContact size={"2rem"} className={"text-primary"} />
                 </span>
-                <span className="font-bold">About</span>
+                <span className="font-bold text-primary">About</span>
               </button>
             </li>
             <li className="flex justify-center hover:scale-110">
@@ -65,9 +65,9 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                   className="tooltip tooltip-top md:tooltip-bottom"
                   data-tip="Projects"
                 >
-                  <PiFolderStarBold size={"2rem"} />
+                  <PiFolderStarBold size={"2rem"} className={"text-primary"} />
                 </span>
-                <span className="font-bold">Projects</span>
+                <span className="font-bold text-primary">Projects</span>
               </button>
             </li>
             <li className="flex justify-center hover:scale-110">
@@ -83,9 +83,9 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                   className="tooltip tooltip-top md:tooltip-bottom"
                   data-tip="Skills"
                 >
-                  <IoBuild size={"2rem"} />
+                  <IoBuild size={"2rem"} className={"text-primary"} />
                 </span>
-                <span className="font-bold">Skills</span>
+                <span className="font-bold text-primary">Skills</span>
               </button>
             </li>
             <li className="flex justify-center hover:scale-110">
@@ -101,9 +101,9 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                   className="tooltip tooltip-top md:tooltip-bottom"
                   data-tip="Contact"
                 >
-                  <SiMinutemailer size={"2rem"} />
+                  <SiMinutemailer size={"2rem"} className={"text-primary"} />
                 </span>
-                <span className="font-bold">Contact</span>
+                <span className="font-bold text-primary">Contact</span>
               </button>
             </li>
           </ul>
