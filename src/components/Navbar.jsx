@@ -3,12 +3,14 @@ import "./Navbar.css";
 function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
   return (
     <>
-      <nav ref={topNavRef} className="md:flex my-16 mx-60">
+      <nav ref={topNavRef} className="md:flex my-16 md:mx-60">
         <div className="flex justify-center md:justify-start">
+          <div className="md:w-48 md:h-auto">
           <img
             className="w-48 rounded-full drop-shadow-lg"
             src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1725055871/da4milsmr0c6ehomo2fd.jpg"
           ></img>
+          </div>
         </div>
         <div className="flex flex-col my-8 mx-16 items-center md:items-start">
           <h1 className="text-5xl font-bold z-20">Don Knobloch</h1>

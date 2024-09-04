@@ -21,7 +21,7 @@ import TailwindIcon from "./devicons/TailwindIcon";
 function HexTile({ skillsRef, title }) {
   return (
     <section ref={skillsRef} className="md:container mx-auto">
-      <div className="mx-36 pt-24">
+      <div className="mx-12 md:mx-36 pt-24">
         <MotionDiv delay={0.3}>
           <h2 className="text-2xl font-medium">{title}</h2>
         </MotionDiv>
