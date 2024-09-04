@@ -3,7 +3,6 @@ import { MdOutlineScreenshotMonitor } from "react-icons/md";
 import { FaRegFileCode } from "react-icons/fa6";
 import DevIcon from "./devicons/DevIcon";
 
-
 function Video({ src, codeUrl, demoUrl, devTools }) {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
@@ -35,14 +34,21 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
             className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
           >
             <a href={demoUrl} target="_blank" className="text-white">
-              <span className="flex"> <MdOutlineScreenshotMonitor/>&nbsp;Live Demo</span>
+              <span className="flex">
+                {" "}
+                <MdOutlineScreenshotMonitor />
+                &nbsp;Live Demo
+              </span>
             </a>
           </button>
           <button
             className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
           >
             <a href={codeUrl} target="_blank" className="text-white">
-              <span className="flex"><FaRegFileCode/>&nbsp;View Code</span>
+              <span className="flex">
+                <FaRegFileCode />
+                &nbsp;View Code
+              </span>
             </a>
           </button>
         </div>
@@ -51,26 +57,20 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
       <div
         className={`absolute bottom-[15%] md:bottom-[20%] w-full ${isButtonVisible ? "visible" : "hidden"}`}
       >
-        <div className={`flex justify-center bg-secondary/75 ${devTools.length > 3 ? "gap-5" : "gap-8"}`}>
-          
-          
-          
-
+        <div
+          className={`flex justify-center bg-secondary/75 ${devTools.length > 3 ? "gap-5" : "gap-8"}`}
+        >
           {devTools.map((devTool) => {
             return (
               <div
-              key={devTool}
-              className="tooltip hover:scale-125 transition-transform"
-            data-tip={devTool}
-          >
-            <DevIcon name={devTool} />
-          </div>
-            )
-          }
-          )}
-          
-
-
+                key={devTool}
+                className="tooltip hover:scale-125 transition-transform"
+                data-tip={devTool}
+              >
+                <DevIcon name={devTool} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

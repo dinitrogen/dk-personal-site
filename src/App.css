@@ -1,22 +1,20 @@
-
 .bar {
-    position:relative;
-    overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 50%);  
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 50%);
 }
 
 @media screen and (min-width: 768px) {
-    .bar::before {
-        clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 60%);
-    }
+  .bar::before {
+    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 60%);
+  }
 }

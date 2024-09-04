@@ -14,8 +14,28 @@ import MongoIcon from "./devicons/MongoIcon";
 import SqlIcon from "./devicons/SqlIcon";
 import TypescriptIcon from "./devicons/TypescriptIcon";
 import WebpackIcon from "./devicons/WebpackIcon";
+import DevIcon from "./devicons/DevIcon";
 
 function Skills({ skillsRef, title }) {
+  const skillArr = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Angular",
+    "NodeJS",
+    "Express",
+    "Git",
+    "Github",
+    "Jenkins",
+    "Jest",
+    "MongoDB",
+    "SQL",
+    "TypeScript",
+    "Webpack",
+    "Tailwind",
+  ];
+
   return (
     <section className="md:container mx-auto">
       <div ref={skillsRef} className="mx-24 pt-24">
@@ -26,6 +46,18 @@ function Skills({ skillsRef, title }) {
 
       <MotionDiv delay={0.5}>
         <div className="w-2/3 mx-auto flex justify-center flex-wrap gap-8 my-12">
+          {skillArr.map((skill) => {
+            return (
+              <div
+                key={skill}
+                className="tooltip hover:scale-110 transition-transform  bg-secondary/20 rounded-md p-2"
+                data-tip={skill}
+              >
+                <DevIcon name={skill} />
+              </div>
+            );
+          })}
+
           <div
             className="tooltip hover:scale-110 transition-transform  bg-secondary/20 rounded-md p-2"
             data-tip="HTML"
@@ -39,6 +71,7 @@ function Skills({ skillsRef, title }) {
           >
             <CssIcon />
           </div>
+
           <div
             className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
             data-tip="JavaScript"
