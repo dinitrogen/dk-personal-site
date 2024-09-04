@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { sharedText } from "./assets/shared-text";
 
@@ -10,6 +9,8 @@ import SmallNav from "./components/SmallNav";
 
 import { motion, AnimatePresence } from "framer-motion";
 import Contact from "./components/Contact";
+import HexTile from "./components/HexTile";
+import Footer from "./components/Footer";
 
 function App() {
   const topNavRef = useRef();
@@ -46,6 +47,7 @@ function App() {
 
   return (
     <div>
+      <div className="-my-32 h-60 bg-primary/75 -skew-y-6"></div>
       <Navbar
         topNavRef={topNavRef}
         aboutRef={aboutRef}
@@ -54,7 +56,7 @@ function App() {
         contactRef={contactRef}
       />
       <div ref={containerRef}></div>
-      <div className="h-12 bg-primary"></div>
+
       <About
         aboutRef={aboutRef}
         title="About me"
@@ -65,9 +67,9 @@ function App() {
         title="Projects"
         projects={sharedText.projects}
       />
-      <Skills skillsRef={skillsRef} title="Skills" />
+      <HexTile skillsRef={skillsRef} title="Skills" />
       <Contact contactRef={contactRef} title="Contact" />
-      <div className="h-96 bg-primary"></div>
+      <Footer />
       <AnimatePresence>
         {!isVisible && (
           <motion.div

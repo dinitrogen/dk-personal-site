@@ -18,8 +18,6 @@ import WebpackIcon from "./devicons/WebpackIcon";
 function Skills({ skillsRef, title }) {
   return (
     <section className="md:container mx-auto">
-      
-      
       <div ref={skillsRef} className="mx-24 pt-24">
         <MotionDiv delay={0.3}>
           <h2 className="text-2xl font-medium">{title}</h2>
@@ -32,7 +30,7 @@ function Skills({ skillsRef, title }) {
             className="tooltip hover:scale-110 transition-transform  bg-secondary/20 rounded-md p-2"
             data-tip="HTML"
           >
-            <HtmlIcon />  
+            <HtmlIcon />
           </div>
 
           <div

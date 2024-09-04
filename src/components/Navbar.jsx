@@ -3,16 +3,16 @@ import "./Navbar.css";
 function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
   return (
     <>
-      <nav ref={topNavRef} className="md:flex m-12">
+      <nav ref={topNavRef} className="md:flex my-16 mx-60">
         <div className="flex justify-center md:justify-start">
           <img
-            className="w-36 rounded-full"
+            className="w-48 rounded-full drop-shadow-lg"
             src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1725055871/da4milsmr0c6ehomo2fd.jpg"
           ></img>
         </div>
-        <div className="flex flex-col my-4 mx-4 items-center md:items-start">
-          <h1 className="text-4xl">Don Knobloch</h1>
-          <ul className="flex gap-8 mx-4 mt-4">
+        <div className="flex flex-col my-8 mx-16 items-center md:items-start">
+          <h1 className="text-5xl font-bold z-20">Don Knobloch</h1>
+          <ul className="flex gap-8 mx-4 mt-8">
             <li className="hover:scale-110">
               <button
                 onClick={() => {
@@ -20,9 +20,9 @@ function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
                     behavior: "smooth",
                   });
                 }}
-                className="nav-link"
+                className="nav-link text-xl font-semibold"
               >
-                About Me
+                About
               </button>
             </li>
             <li className="hover:scale-110">
@@ -32,7 +32,7 @@ function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
                     behavior: "smooth",
                   });
                 }}
-                className="nav-link"
+                className="nav-link text-xl font-semibold"
               >
                 Projects
               </button>
@@ -44,7 +44,7 @@ function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
                     behavior: "smooth",
                   });
                 }}
-                className="nav-link"
+                className="nav-link text-xl font-semibold"
               >
                 Skills
               </button>
@@ -56,7 +56,7 @@ function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
                     behavior: "smooth",
                   });
                 }}
-                className="nav-link"
+                className="nav-link text-xl font-semibold"
               >
                 Contact
               </button>

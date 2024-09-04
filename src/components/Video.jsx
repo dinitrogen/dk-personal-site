@@ -21,7 +21,7 @@ function Video({ src, codeUrl, demoUrl }) {
       className="relative rounded-lg overflow-hidden drop-shadow-xl hover:drop-shadow-2xl max-w-xl"
     >
       <video
-        className={`w-100 h-auto ${isButtonVisible ? "blur-sm" : ""}`}
+        className={`w-100 h-auto transition-trasform ${isButtonVisible ? "blur-sm" : ""}`}
         src={src}
         autoPlay={true}
         muted
