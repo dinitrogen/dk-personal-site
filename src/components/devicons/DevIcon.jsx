@@ -1,5 +1,7 @@
 import AngularIcon from "./AngularIcon";
+import CSharpIcon from "./CsharpIcon";
 import CssIcon from "./CssIcon";
+import DotNetIcon from "./DotNetIcon";
 import ExpressIcon from "./ExpressIcon";
 import GithubIcon from "./GithubIcon";
 import GitIcon from "./GitIcon";
@@ -49,6 +51,10 @@ function DevIcon({ name, width }) {
       return <TypescriptIcon width={width} />;
     case "Webpack":
       return <WebpackIcon width={width} />;
+    case "C#":
+        return <CSharpIcon width={width} />;
+    case ".NET":
+        return <DotNetIcon width={width} />;
     default:
       return null;
   }

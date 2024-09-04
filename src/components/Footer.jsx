@@ -3,10 +3,11 @@ import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="footer footer-center bg-primary/75 text-base-content rounded p-10">
-      <nav>
-        <p className="text-lg">Find me on:</p>
-        <div className="grid grid-flow-col gap-4">
+    <footer className="footbar flex flex-col justify-end gap-10 items-center before:bg-primary/75 h-96">
+      
+      <div className="z-10">
+        <p className="text-lg font-medium z-20 pb-2">Find me on:</p>
+        <div className="grid grid-flow-col gap-6">
           <a href="https://www.linkedin.com/in/donald-knobloch">
             <FaLinkedin size={"2rem"} />
           </a>
@@ -14,9 +15,9 @@ function Footer() {
             <FaGithub size={"2rem"} />
           </a>
         </div>
-      </nav>
-      <aside className="mb-16 md:mb-0">
-        <p className="text-lg">
+      </div>
+      <aside className="z-10">
+        <p className="text-md font-medium z-20 mb-28 md:mb-12">
           Copyright © {new Date().getFullYear()} - Don Knobloch
         </p>
       </aside>

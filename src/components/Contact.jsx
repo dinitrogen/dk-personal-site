@@ -47,15 +47,14 @@ function Contact({ contactRef, title }) {
     <section className="md:container mx-auto">
       <div ref={contactRef} className="mx-12 md:mx-36 pt-12">
         <MotionDiv delay={0.3}>
-          <h2 className="text-2xl font-medium">{title}</h2>
+          <h2 className="text-3xl font-medium">{title}</h2>
         </MotionDiv>
       </div>
       <div className="mx-12 md:w-1/2 md:mx-auto">
         <MotionDiv delay={0.5}>
           <div>
             <p className="text-xl font-normal my-8">
-              I look forward to hearing from you! Please complete the form below
-              if you would like to get in touch with me.
+              Please complete the form below to get in touch with me. I look forward to hearing from you! 
             </p>
           </div>
           {isMessageSent ? (
@@ -129,7 +128,7 @@ function Contact({ contactRef, title }) {
                 onChange={handleChange}
               ></textarea>
               <button
-                className="btn btn-primary w-1/2 mb-12"
+                className="btn btn-primary w-1/2 mb-12 text-white"
                 type="submit"
                 disabled={!isInputValid}
               >

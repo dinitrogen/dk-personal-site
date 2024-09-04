@@ -3,9 +3,9 @@ import MotionDiv from "./MotionDiv";
 function About({ aboutRef, title, bodyText }) {
   return (
     <section className="md:container mx-auto">
-      <div ref={aboutRef} className="mx-12 md:mx-36 pt-12">
+      <div ref={aboutRef} className="mx-12 md:mx-36 pt-4">
         <MotionDiv delay={0.3}>
-          <h2 className="text-2xl font-medium">{title}</h2>
+          <h2 className="text-3xl font-medium">{title}</h2>
         </MotionDiv>
       </div>
       <div>

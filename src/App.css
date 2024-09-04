@@ -18,3 +18,24 @@
     clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 60%);
   }
 }
+
+.footbar {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 30%, 100% 10%, 100% 100%, 0 100%);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .footbar::before {
+      clip-path: polygon(0 50%, 100% 25%, 100% 100%, 0 100%);
+    }
+  }

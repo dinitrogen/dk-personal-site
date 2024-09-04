@@ -9,7 +9,7 @@ import SmallNav from "./components/SmallNav";
 
 import { motion, AnimatePresence } from "framer-motion";
 import Contact from "./components/Contact";
-import HexTile from "./components/HexTile";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
         title="Projects"
         projects={sharedText.projects}
       />
-      <HexTile skillsRef={skillsRef} title="Skills" />
+      <Skills skillsRef={skillsRef} title="Skills" />
       <Contact contactRef={contactRef} title="Contact" />
       <Footer />
       <AnimatePresence>

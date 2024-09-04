@@ -35,12 +35,12 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
           >
             <a href={demoUrl} target="_blank" className="text-white">
               <span className="flex">
-                {" "}
                 <MdOutlineScreenshotMonitor />
-                &nbsp;Live Demo
+                &nbsp;Live Preview
               </span>
             </a>
           </button>
+          {codeUrl &&
           <button
             className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
           >
@@ -50,7 +50,7 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
                 &nbsp;View Code
               </span>
             </a>
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -58,7 +58,7 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
         className={`absolute bottom-[15%] md:bottom-[20%] w-full ${isButtonVisible ? "visible" : "hidden"}`}
       >
         <div
-          className={`flex justify-center bg-secondary/75 ${devTools.length > 3 ? "gap-5" : "gap-8"}`}
+          className={`flex justify-center bg-secondary/75 ${devTools.length > 3 ? "gap-3" : "gap-8"}`}
         >
           {devTools.map((devTool) => {
             return (

@@ -1,19 +1,5 @@
 import MotionDiv from "./MotionDiv";
-import HtmlIcon from "./devicons/HtmlIcon";
-import CssIcon from "./devicons/CssIcon";
-import JsIcon from "./devicons/JsIcon";
-import ReactIcon from "./devicons/ReactIcon";
-import AngularIcon from "./devicons/AngularIcon";
-import NodeIcon from "./devicons/NodeIcon";
-import ExpressIcon from "./devicons/ExpressIcon";
-import GitIcon from "./devicons/GitIcon";
-import GithubIcon from "./devicons/GithubIcon";
-import JenkinsIcon from "./devicons/JenkinsIcon";
-import JestIcon from "./devicons/JestIcon";
-import MongoIcon from "./devicons/MongoIcon";
-import SqlIcon from "./devicons/SqlIcon";
-import TypescriptIcon from "./devicons/TypescriptIcon";
-import WebpackIcon from "./devicons/WebpackIcon";
+import "./Skills.scss";
 import DevIcon from "./devicons/DevIcon";
 
 function Skills({ skillsRef, title }) {
@@ -34,122 +20,42 @@ function Skills({ skillsRef, title }) {
     "TypeScript",
     "Webpack",
     "Tailwind",
+    "C#",
+    '.NET'
   ];
 
   return (
-    <section className="md:container mx-auto">
-      <div ref={skillsRef} className="mx-24 pt-24">
+    <section ref={skillsRef} className="md:container mx-auto">
+      <div className="mx-12 md:mx-36 pt-12">
         <MotionDiv delay={0.3}>
-          <h2 className="text-2xl font-medium">{title}</h2>
+          <h2 className="text-3xl font-medium">{title}</h2>
+        </MotionDiv>
+      </div>
+      <div>
+        <MotionDiv delay={0.4}>
+          <p className="text-xl font-normal w-2/3 mx-auto my-8">
+            I continually strive to expand my development skills and refine my
+            existing skills through practice. Learning a new programming
+            language or technology is like adding a new tool to the toolbox, and
+            with the right tools any project can be tackled. Here are some of
+            tools I work with the most.
+          </p>
         </MotionDiv>
       </div>
 
       <MotionDiv delay={0.5}>
-        <div className="w-2/3 mx-auto flex justify-center flex-wrap gap-8 my-12">
-          {skillArr.map((skill) => {
-            return (
-              <div
-                key={skill}
-                className="tooltip hover:scale-110 transition-transform  bg-secondary/20 rounded-md p-2"
-                data-tip={skill}
-              >
-                <DevIcon name={skill} />
-              </div>
-            );
-          })}
-
-          <div
-            className="tooltip hover:scale-110 transition-transform  bg-secondary/20 rounded-md p-2"
-            data-tip="HTML"
-          >
-            <HtmlIcon />
-          </div>
-
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="CSS"
-          >
-            <CssIcon />
-          </div>
-
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="JavaScript"
-          >
-            <JsIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="React"
-          >
-            <ReactIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Angular"
-          >
-            <AngularIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="NodeJS"
-          >
-            <NodeIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Express"
-          >
-            <ExpressIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Git"
-          >
-            <GitIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="GitHub"
-          >
-            <GithubIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Jenkins"
-          >
-            <JenkinsIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Jest"
-          >
-            <JestIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="TypeScript"
-          >
-            <TypescriptIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="MongoDB"
-          >
-            <MongoIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="SQL"
-          >
-            <SqlIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform bg-secondary/20 rounded-md p-2"
-            data-tip="Webpack"
-          >
-            <WebpackIcon />
-          </div>
+        <div className="md:w-2/3 mx-auto my-12">
+          <ul className="list">
+            {skillArr.map((skill) => {
+              return (
+                <li key={skill} className="list-item tooltip" data-tip={skill}>
+                  <div className="item-inside bg-primary/20 hover:scale-110 hover:bg-primary/40 transition-transform">
+                    <DevIcon name={skill} width="w-full" />
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </MotionDiv>
     </section>
