@@ -45,7 +45,7 @@ function Contact({ contactRef, title }) {
 
   return (
     <section className="md:container mx-auto">
-      <div ref={contactRef} className="mx-12 md:mx-36 pt-24">
+      <div ref={contactRef} className="mx-12 md:mx-36 pt-12">
         <MotionDiv delay={0.3}>
           <h2 className="text-2xl font-medium">{title}</h2>
         </MotionDiv>

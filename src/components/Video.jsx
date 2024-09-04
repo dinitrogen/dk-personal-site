@@ -1,9 +1,10 @@
 import { useState } from "react";
-import HtmlIcon from "./devicons/HtmlIcon";
-import CssIcon from "./devicons/CssIcon";
-import JsIcon from "./devicons/JsIcon";
+import { MdOutlineScreenshotMonitor } from "react-icons/md";
+import { FaRegFileCode } from "react-icons/fa6";
+import DevIcon from "./devicons/DevIcon";
 
-function Video({ src, codeUrl, demoUrl }) {
+
+function Video({ src, codeUrl, demoUrl, devTools }) {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
   function showButtons() {
@@ -18,57 +19,58 @@ function Video({ src, codeUrl, demoUrl }) {
     <div
       onMouseEnter={showButtons}
       onMouseLeave={hideButtons}
-      className="relative rounded-lg overflow-hidden drop-shadow-xl hover:drop-shadow-2xl max-w-xl"
+      className="relative rounded-lg overflow-hidden drop-shadow-xl hover:drop-shadow-2xl"
     >
       <video
-        className={`w-100 h-auto transition-trasform ${isButtonVisible ? "blur-sm" : ""}`}
+        className={`${isButtonVisible ? "blur-sm" : ""}`}
         src={src}
         autoPlay={true}
         muted
         loop
       />
 
-      <div className="absolute bottom-1/2 w-full">
-        <div className="flex justify-center gap-12 md:gap-24">
+      <div className="absolute bottom-[60%] md:bottom-[60%] w-full">
+        <div className="flex justify-center gap-8">
           <button
-            className={`btn btn-primary ${isButtonVisible ? "visible" : "hidden"}`}
+            className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
           >
-            <a href={demoUrl} target="_blank">
-              Live Demo
+            <a href={demoUrl} target="_blank" className="text-white">
+              <span className="flex"> <MdOutlineScreenshotMonitor/>&nbsp;Live Demo</span>
             </a>
           </button>
           <button
-            className={`btn btn-primary ${isButtonVisible ? "visible" : "hidden"}`}
+            className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
           >
-            <a href={codeUrl} target="_blank">
-              View Code
+            <a href={codeUrl} target="_blank" className="text-white">
+              <span className="flex"><FaRegFileCode/>&nbsp;View Code</span>
             </a>
           </button>
         </div>
       </div>
 
       <div
-        className={`absolute bottom-1/4 w-full ${isButtonVisible ? "visible" : "hidden"}`}
+        className={`absolute bottom-[15%] md:bottom-[20%] w-full ${isButtonVisible ? "visible" : "hidden"}`}
       >
-        <div className="flex justify-center gap-6 md:gap-12">
-          <div
-            className="tooltip hover:scale-110 transition-transform"
-            data-tip="HTML"
+        <div className={`flex justify-center bg-secondary/75 ${devTools.length > 3 ? "gap-5" : "gap-8"}`}>
+          
+          
+          
+
+          {devTools.map((devTool) => {
+            return (
+              <div
+              key={devTool}
+              className="tooltip hover:scale-125 transition-transform"
+            data-tip={devTool}
           >
-            <HtmlIcon />
+            <DevIcon name={devTool} />
           </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform"
-            data-tip="CSS"
-          >
-            <CssIcon />
-          </div>
-          <div
-            className="tooltip hover:scale-110 transition-transform"
-            data-tip="JavaScript"
-          >
-            <JsIcon />
-          </div>
+            )
+          }
+          )}
+          
+
+
         </div>
       </div>
     </div>

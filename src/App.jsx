@@ -19,7 +19,7 @@ function App() {
   const skillsRef = useRef();
   const contactRef = useRef();
 
-  const containerRef = useRef(null);
+  const navTriggerRef = useRef(null);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -35,7 +35,7 @@ function App() {
       threshold: 1.0,
     };
 
-    const current = containerRef.current;
+    const current = navTriggerRef.current;
 
     const observer = new IntersectionObserver(callbackFunction, options);
     if (current) observer.observe(current);
@@ -43,11 +43,10 @@ function App() {
     return () => {
       if (current) observer.unobserve(current);
     };
-  }, [containerRef]);
+  }, [navTriggerRef]);
 
   return (
     <div>
-      <div className="-my-32 h-60 bg-primary/75 -skew-y-6"></div>
       <Navbar
         topNavRef={topNavRef}
         aboutRef={aboutRef}
@@ -55,7 +54,7 @@ function App() {
         skillsRef={skillsRef}
         contactRef={contactRef}
       />
-      <div ref={containerRef}></div>
+      <div ref={navTriggerRef} className="-translate-y-12"></div>
 
       <About
         aboutRef={aboutRef}
