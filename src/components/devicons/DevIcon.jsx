@@ -1,5 +1,5 @@
 import AngularIcon from "./AngularIcon";
-import CSharpIcon from "./CsharpIcon";
+import CSharpIcon from "./CSharpIcon";
 import CssIcon from "./CssIcon";
 import DotNetIcon from "./DotNetIcon";
 import ExpressIcon from "./ExpressIcon";
@@ -52,9 +52,9 @@ function DevIcon({ name, width }) {
     case "Webpack":
       return <WebpackIcon width={width} />;
     case "C#":
-        return <CSharpIcon width={width} />;
+      return <CSharpIcon width={width} />;
     case ".NET":
-        return <DotNetIcon width={width} />;
+      return <DotNetIcon width={width} />;
     default:
       return null;
   }

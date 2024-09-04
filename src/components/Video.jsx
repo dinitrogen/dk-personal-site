@@ -40,17 +40,18 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
               </span>
             </a>
           </button>
-          {codeUrl &&
-          <button
-            className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
-          >
-            <a href={codeUrl} target="_blank" className="text-white">
-              <span className="flex">
-                <FaRegFileCode />
-                &nbsp;View Code
-              </span>
-            </a>
-          </button>}
+          {codeUrl && (
+            <button
+              className={`btn btn-primary border-2 rounded-md border-white hover:border-white hover:scale-110 ${isButtonVisible ? "visible" : "hidden"}`}
+            >
+              <a href={codeUrl} target="_blank" className="text-white">
+                <span className="flex">
+                  <FaRegFileCode />
+                  &nbsp;View Code
+                </span>
+              </a>
+            </button>
+          )}
         </div>
       </div>
 

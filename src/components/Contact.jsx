@@ -54,7 +54,8 @@ function Contact({ contactRef, title }) {
         <MotionDiv delay={0.5}>
           <div>
             <p className="text-xl font-normal my-8">
-              Please complete the form below to get in touch with me. I look forward to hearing from you! 
+              Please complete the form below to get in touch with me. I look
+              forward to hearing from you!
             </p>
           </div>
           {isMessageSent ? (

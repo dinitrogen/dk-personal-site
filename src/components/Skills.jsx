@@ -21,7 +21,7 @@ function Skills({ skillsRef, title }) {
     "Webpack",
     "Tailwind",
     "C#",
-    '.NET'
+    ".NET",
   ];
 
   return (
