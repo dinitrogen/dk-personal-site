@@ -3,7 +3,7 @@ import "./Navbar.css";
 function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
   return (
     <>
-      <div className="bar flex justify-center before:bg-primary py-14">
+      <div className="bar flex justify-center py-14 before:bg-gradient-to-r from-secondary to-primary">
         <nav ref={topNavRef} className="md:flex">
           <div className="flex justify-center">
             <div className="md:w-48 md:h-auto md:translate-x-14 z-20">

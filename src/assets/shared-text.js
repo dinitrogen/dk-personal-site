@@ -48,6 +48,17 @@ export const sharedText = {
       devTools: ["React", "CSS"],
     },
     {
+      name: "Melody Quest",
+      type: "personal",
+      description:
+        "A music education/action game with an 8-bit retro style and an original chiptune soundtrack, offering a fun and engaging approach to help students with memorization of musical note placement on the staff and basic musical theory concepts.",
+      videoUrl:
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725486040/s2oov7gdex991yybvglu.mp4",
+      demoUrl: "https://dinitrogen.itch.io/melody-quest",
+      codeUrl: "https://github.com/dinitrogen/top-game-jam-1",
+      devTools: ["HTML", "JavaScript", "CSS"],
+    },
+    {
       name: "Fidelity Get Invested Pathways",
       type: "professional",
       description:
