@@ -7,7 +7,7 @@ import { FaChevronUp } from "react-icons/fa";
 
 function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
   return (
-    <nav className="fixed bottom-0 w-full md:right-3 md:top-0 md:w-auto">
+    <nav className="z-20 fixed bottom-0 w-full md:right-3 md:top-0 md:w-auto">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

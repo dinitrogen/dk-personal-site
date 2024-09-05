@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footbar flex flex-col justify-end gap-10 items-center before:bg-gradient-to-r from-primary to-secondary h-96">
       <div className="z-10">
-        <p className="text-lg font-medium z-20 pb-2 text-white">Find me on:</p>
+        <p className="text-lg font-medium z-10 pb-2 text-white">Find me on:</p>
         <div className="grid grid-flow-col gap-6">
           <a
             className="text-white"
