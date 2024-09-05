@@ -13,7 +13,7 @@ export const sharedText = {
         id: 2,
         text: {
           __html:
-            "Prior to Fidelity and the software dev chapter of my career, I worked in the oil additives industry for the Lubrizol Corporation, where I built a 12 year track record of solving challenging technical problems and meeting customer needs. I applied my chemistry expertise to develop and commercialize new lubricant additive components and formulations, many of which are now used across the globe in major OEM vehicles and off-highway equipment.",
+            "Prior to Fidelity and the software dev chapter of my career, I worked in the oil additives industry for the Lubrizol Corporation, where for 12 years I built a track record of solving challenging technical problems and meeting customer needs. I applied my chemistry expertise to develop and commercialize new lubricant additive components and formulations, many of which are now used across the globe in major OEM vehicles and off-highway equipment.",
         },
         delay: 0.6,
       },
