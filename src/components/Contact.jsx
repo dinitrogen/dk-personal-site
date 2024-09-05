@@ -35,7 +35,11 @@ function Contact({ contactRef, title }) {
       fetch("https://dk-synth-site.fly.dev/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: name, email: email, message: message }),
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: `[dknobloch.com] ${message}`,
+        }),
       });
       setIsMessageSent(true);
     } catch (e) {

@@ -1,5 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -18,9 +20,25 @@ function Footer() {
           </a>
         </div>
       </div>
-      <aside className="z-10">
-        <p className="text-md font-medium z-20 mb-28 md:mb-12 text-white">
-          Copyright © {new Date().getFullYear()} - Don Knobloch
+      <aside className="flex flex-col items-center gap-2 z-10 text-md font-medium text-white mb-28 md:mb-12">
+        <p>Copyright © {new Date().getFullYear()} - Don Knobloch</p>
+        <p>
+          Built with&nbsp;&nbsp;
+          <span className="tooltip tooltip-top" data-tip="React">
+            <FaReact color="#61DAFB" size={"1.75rem"} className={"inline"} />
+          </span>{" "}
+          ,{" "}
+          <span className="tooltip tooltip-top" data-tip="Tailwind">
+            <RiTailwindCssFill
+              color="#38bdf8"
+              size={"1.75rem"}
+              className={"inline"}
+            />
+          </span>{" "}
+          , and{" "}
+          <span className="text-lg tooltip tooltip-top" data-tip="Love!">
+            &#129505;
+          </span>
         </p>
       </aside>
     </footer>
