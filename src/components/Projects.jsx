@@ -16,9 +16,9 @@ function Projects({ projectsRef, title, projects }) {
         <MotionDiv delay={0.4}>
           <p className="text-xl font-normal w-2/3 mx-auto my-8">
             Here are some examples of my work, including professional projects I
-            have contributed to as well as some personal projects, leveraging the various
-            tools and technologies I have gained. Hover or
-            tap on each video below for more details and links to the application and
+            have contributed to as well as some personal projects, leveraging
+            the various tools and technologies I have gained. Hover or tap on
+            each video below for more details and links to the application and
             source code.
           </p>
         </MotionDiv>

@@ -13,7 +13,15 @@ export const sharedText = {
         id: 2,
         text: {
           __html:
-            "I'm based in northeast Ohio, USA, and when I'm not coding, I'm either spending time with my family and friends, or involved in one of my various interests, such as music production,  woodworking, biking, or drinking coffee &#9749;.",
+            "Prior to Fidelity and the software dev chapter of my career, I worked in the oil additives industry for the Lubrizol Corporation, where I built a 12 year track record of solving challenging technical problems and meeting customer needs. I applied my chemistry expertise to develop and commercialize new lubricant additive components and formulations, many of which are now used across the globe in major OEM vehicles and off-highway equipment.",
+        },
+        delay: 0.6,
+      },
+      {
+        id: 3,
+        text: {
+          __html:
+            "I live in northeast Ohio, USA, and when I'm not coding I'm either spending time with my family and friends, or involved in one of my various interests, such as music production,  woodworking, biking, or drinking coffee &#9749;.",
         },
         delay: 0.7,
       },
@@ -68,7 +76,7 @@ export const sharedText = {
       name: "Fidelity Get Invested Pathways",
       type: "professional",
       description:
-        "An interactive guide and simplified stock/fund screening tool designed to educate novice investors and help them make their first trade. Built with Angular, TypeScript and NodeJS. (Note: A Fidelity login is required to access.)",
+        "An interactive guide and simplified stock/fund screening tool designed to educate novice investors and help them make their first trade. Built with Angular, TypeScript and NodeJS. (Note: A Fidelity account is required to access.)",
       videoUrl:
         "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725471508/bsoeqs200kftchuo9zuf.mp4",
       demoUrl: "https://digital.fidelity.com/ftgw/digital/pathway/invest",
