@@ -35,10 +35,10 @@ function Skills({ skillsRef, title }) {
         <MotionDiv delay={0.4}>
           <p className="text-xl font-normal w-2/3 mx-auto my-8">
             I continually strive to expand my development skills and refine my
-            existing skills through practice. Learning a new programming
+            existing skillset through practice. Learning a new programming
             language or technology is like adding a new tool to the toolbox, and
             with the right tools any project can be tackled. Here are some of
-            tools I work with the most.
+            tools and technologies I work with the most.
           </p>
         </MotionDiv>
       </div>

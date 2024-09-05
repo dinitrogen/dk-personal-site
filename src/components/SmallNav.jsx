@@ -15,7 +15,7 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
       >
         <div className="flex bg-slate-300/75 md:bg-transparent w-full">
           <ul className="flex md:flex-col justify-center gap-8 mx-4 my-4 w-full">
-            <li className="flex justify-center hover:scale-110">
+            <li className="flex justify-center hover:drop-shadow-md hover:scale-110">
               <button
                 onClick={() => {
                   topNavRef.current?.scrollIntoView({
@@ -24,17 +24,13 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                 }}
                 className="flex flex-col items-center"
               >
-                <span
-                  className="tooltip tooltip-top md:tooltip-bottom"
-                  data-tip="Go to top"
-                >
-                  <FaChevronUp size={"2rem"} className={"text-primary"} />
-                </span>
+                <FaChevronUp size={"2rem"} className={"text-primary"} />
+
                 <span className="font-bold text-primary">Top</span>
               </button>
             </li>
 
-            <li className="flex justify-center hover:scale-110">
+            <li className="flex justify-center hover:drop-shadow-md hover:scale-110">
               <button
                 onClick={() => {
                   aboutRef.current?.scrollIntoView({
@@ -43,16 +39,12 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                 }}
                 className="flex flex-col items-center"
               >
-                <span
-                  className="tooltip tooltip-top md:tooltip-bottom"
-                  data-tip="About"
-                >
-                  <IoIosContact size={"2rem"} className={"text-primary"} />
-                </span>
+                <IoIosContact size={"2rem"} className={"text-primary"} />
+
                 <span className="font-bold text-primary">About</span>
               </button>
             </li>
-            <li className="flex justify-center hover:scale-110">
+            <li className="flex justify-center hover:drop-shadow-md hover:scale-110">
               <button
                 onClick={() => {
                   projectsRef.current?.scrollIntoView({
@@ -61,16 +53,12 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                 }}
                 className="flex flex-col items-center"
               >
-                <span
-                  className="tooltip tooltip-top md:tooltip-bottom"
-                  data-tip="Projects"
-                >
-                  <PiFolderStarBold size={"2rem"} className={"text-primary"} />
-                </span>
+                <PiFolderStarBold size={"2rem"} className={"text-primary"} />
+
                 <span className="font-bold text-primary">Projects</span>
               </button>
             </li>
-            <li className="flex justify-center hover:scale-110">
+            <li className="flex justify-center hover:drop-shadow-md hover:scale-110">
               <button
                 onClick={() => {
                   skillsRef.current?.scrollIntoView({
@@ -79,16 +67,12 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                 }}
                 className="flex flex-col items-center"
               >
-                <span
-                  className="tooltip tooltip-top md:tooltip-bottom"
-                  data-tip="Skills"
-                >
-                  <IoBuild size={"2rem"} className={"text-primary"} />
-                </span>
+                <IoBuild size={"2rem"} className={"text-primary"} />
+
                 <span className="font-bold text-primary">Skills</span>
               </button>
             </li>
-            <li className="flex justify-center hover:scale-110">
+            <li className="flex justify-center hover:drop-shadow-md hover:scale-110">
               <button
                 onClick={() => {
                   contactRef.current?.scrollIntoView({
@@ -97,12 +81,8 @@ function SmallNav({ aboutRef, projectsRef, skillsRef, contactRef, topNavRef }) {
                 }}
                 className="flex flex-col items-center"
               >
-                <span
-                  className="tooltip tooltip-top md:tooltip-bottom"
-                  data-tip="Contact"
-                >
-                  <SiMinutemailer size={"2rem"} className={"text-primary"} />
-                </span>
+                <SiMinutemailer size={"2rem"} className={"text-primary"} />
+
                 <span className="font-bold text-primary">Contact</span>
               </button>
             </li>

@@ -3,12 +3,18 @@ export const sharedText = {
     body: [
       {
         id: 1,
-        text: "Hello and welcome to my personal site! I am a self-taught full stack web developer with more than 2 years of professional experience working as a web application developer for Fidelity Investments. I strive to build experiences that are attractive, responsive, accessible, and fun.",
+        text: {
+          __html:
+            "Hello and welcome to my personal site! I am a self-taught full-stack web developer with more than 2 years of professional experience working as a software engineer for Fidelity Investments, contributing to applications that serve millions of clients. I strive to build experiences that are attractive, responsive, accessible, and fun to use.",
+        },
         delay: 0.5,
       },
       {
         id: 2,
-        text: "I'm based in northeast Ohio, USA, and when I'm not coding, I'm either spending time with my family or involved in one of my hobbies, such as music production,  woodworking, or biking.",
+        text: {
+          __html:
+            "I'm based in northeast Ohio, USA, and when I'm not coding, I'm either spending time with my family and friends, or involved in one of my various interests, such as music production,  woodworking, biking, or drinking coffee &#9749;.",
+        },
         delay: 0.7,
       },
     ],
@@ -34,7 +40,7 @@ export const sharedText = {
         "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725049170/uj82kcpte0ltfdfmc25c.mp4",
       demoUrl: "https://dinitrogen.github.io/memory-card-game/",
       codeUrl: "https://github.com/dinitrogen/memory-card-game",
-      devTools: ["React", "CSS", "C#", ".NET"],
+      devTools: ["React", "JavaScript", "CSS", "C#", ".NET"],
     },
     {
       name: "Stock Finder",
@@ -45,7 +51,7 @@ export const sharedText = {
         "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725049203/jbbifu2zc381lqctxv7e.mp4",
       demoUrl: "https://finance-react-app-63c8b.web.app/",
       codeUrl: "https://github.com/dinitrogen/finance-react-app",
-      devTools: ["React", "CSS"],
+      devTools: ["React", "JavaScript", "CSS"],
     },
     {
       name: "Melody Quest",

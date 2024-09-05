@@ -12,7 +12,10 @@ function About({ aboutRef, title, bodyText }) {
         {bodyText &&
           bodyText.map((p) => (
             <MotionDiv key={p.id} delay={p.delay}>
-              <p className="text-xl font-normal w-2/3 mx-auto my-8">{p.text}</p>
+              <p
+                className="text-xl font-normal w-2/3 mx-auto my-8"
+                dangerouslySetInnerHTML={p.text}
+              ></p>
             </MotionDiv>
           ))}
       </div>
