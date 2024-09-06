@@ -33,7 +33,7 @@ function Skills({ skillsRef, title }) {
       </div>
       <div>
         <MotionDiv delay={0.4}>
-          <p className="text-xl font-normal w-2/3 mx-auto my-8">
+          <p className="text-xl font-normal w-3/4 md:w-2/3 mx-auto my-8">
             I continually strive to expand my development skills and refine my
             existing skillset through practice. Learning a new programming
             language or technology is like adding a new tool to the toolbox, and

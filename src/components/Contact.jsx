@@ -54,7 +54,7 @@ function Contact({ contactRef, title }) {
           <h2 className="text-3xl font-medium">{title}</h2>
         </MotionDiv>
       </div>
-      <div className="mx-12 md:w-1/2 md:mx-auto">
+      <div className="mx-12 w-3/4 md:w-1/2 md:mx-auto">
         <MotionDiv delay={0.5}>
           <div>
             <p className="text-xl font-normal my-8">
