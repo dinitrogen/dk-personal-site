@@ -9,7 +9,7 @@ function Navbar({ topNavRef, aboutRef, projectsRef, skillsRef, contactRef }) {
             <div className="md:w-48 md:h-auto md:translate-x-14 z-20">
               <img
                 className="w-48 rounded-full drop-shadow-xl"
-                src="https://res.cloudinary.com/dopr8pnvl/image/upload/v1725055871/da4milsmr0c6ehomo2fd.jpg"
+                src="https://res.cloudinary.com/dopr8pnvl/image/upload/f_auto,q_auto/me?_a=BAMAEua40"
               ></img>
             </div>
           </div>
