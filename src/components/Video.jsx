@@ -26,6 +26,7 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
         autoPlay={true}
         muted
         loop
+        type="video/mp4"
       />
 
       <div className="absolute bottom-[60%] md:bottom-[60%] w-full">
