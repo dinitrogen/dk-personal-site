@@ -20,13 +20,19 @@ function Video({ src, codeUrl, demoUrl, devTools }) {
       onMouseLeave={hideButtons}
       className="relative rounded-lg overflow-hidden drop-shadow-xl hover:drop-shadow-2xl"
     >
-      <video
+      {/* <video
         className={`${isButtonVisible ? "blur-sm" : ""}`}
         src={src}
         autoPlay={true}
         muted
         loop
         type="video/mp4"
+      /> */}
+
+      <img
+        className={`${isButtonVisible ? "blur-sm" : ""}`}
+        src={src}
+        autoPlay={true}
       />
 
       <div className="absolute bottom-[60%] md:bottom-[60%] w-full">
