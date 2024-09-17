@@ -34,7 +34,7 @@ export const sharedText = {
       description:
         "An e-commerce site for a small business building and selling analog synthesizer modules, created with Angular and NodeJS.",
       videoUrl:
-        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725049073/t0wdcwdv5uxqeqxr29o1.gif",
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/e_loop/v1725049073/t0wdcwdv5uxqeqxr29o1.gif",
       demoUrl: "https://dk-synthesis.com/",
       codeUrl: "https://github.com/dinitrogen/dk-synth-site",
       devTools: ["Angular", "TypeScript", "NodeJS", "Tailwind", "MongoDB"],
@@ -45,7 +45,7 @@ export const sharedText = {
       description:
         "A retro-styled memory game developed with React and served by a backend API built with C#/ASP.NET.",
       videoUrl:
-        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725049170/uj82kcpte0ltfdfmc25c.gif",
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/e_loop/v1725049170/uj82kcpte0ltfdfmc25c.gif",
       demoUrl: "https://dinitrogen.github.io/memory-card-game/",
       codeUrl: "https://github.com/dinitrogen/memory-card-game",
       devTools: ["React", "JavaScript", "CSS", "C#", ".NET"],
@@ -56,7 +56,7 @@ export const sharedText = {
       description:
         "A responsive single-page web app built with React and Firebase for searching stock quotes and managing favorites.",
       videoUrl:
-        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725049203/jbbifu2zc381lqctxv7e.gif",
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/e_loop/v1725049203/jbbifu2zc381lqctxv7e.gif",
       demoUrl: "https://finance-react-app-63c8b.web.app/",
       codeUrl: "https://github.com/dinitrogen/finance-react-app",
       devTools: ["React", "JavaScript", "CSS"],
@@ -67,7 +67,7 @@ export const sharedText = {
       description:
         "A music education/action game with an 8-bit retro style and an original chiptune soundtrack, offering a fun and engaging approach to help students with memorization of musical note placement on the staff and basic musical theory concepts.",
       videoUrl:
-        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725486040/s2oov7gdex991yybvglu.gif",
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/e_loop/v1725486040/s2oov7gdex991yybvglu.gif",
       demoUrl: "https://dinitrogen.itch.io/melody-quest",
       codeUrl: "https://github.com/dinitrogen/top-game-jam-1",
       devTools: ["HTML", "JavaScript", "CSS"],
@@ -79,7 +79,7 @@ export const sharedText = {
         "An interactive guide and simplified stock/fund screening tool designed to educate novice investors and help them make their first trade. Built with Angular, TypeScript and NodeJS. (Note: A Fidelity account is required to access.)",
       additionalInfo: "Over 350k customers since launch, over 2.5B invested since launch",
       videoUrl:
-        "https://res.cloudinary.com/dopr8pnvl/video/upload/v1725471508/bsoeqs200kftchuo9zuf.gif",
+        "https://res.cloudinary.com/dopr8pnvl/video/upload/e_loop/v1725471508/bsoeqs200kftchuo9zuf.gif",
       demoUrl: "https://digital.fidelity.com/ftgw/digital/pathway/invest",
       codeUrl: null,
       devTools: ["Angular", "TypeScript", "NodeJS", "Express"],
